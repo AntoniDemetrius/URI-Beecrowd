@@ -4,10 +4,10 @@ while 1:
 	if (qte == 0):
 		break
 
-	resultados = list(map(int,input().split()))
+	result = list(map(int,input().split()))
 	m = 0
 	j = 0
-	for v in resultados:
+	for v in result:
 		if(v == 0):
 			m += 1
 		else:
