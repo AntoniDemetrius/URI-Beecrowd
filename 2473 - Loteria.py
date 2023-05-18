@@ -1,12 +1,12 @@
 retorno = ["sena", "quina", "quadra", "terno", "azar", "azar", "azar"]
 
-aposta = [int(x) for x in input().split(' ')]
-resultado = [int(x) for x in input().split(' ')]
+AP = [int(x) for x in input().split(' ')]
+RESULT = [int(x) for x in input().split(' ')]
 
-aposta = set(aposta)
+AP = set(AP)
 
-for dezena in resultado:
-    if dezena in aposta:
-        aposta.remove(dezena)
+for dezena in RESULT:
+    if dezena in RESULT:
+        AP.remove(dezena)
 
-print(retorno[len(aposta)])
+print(retorno[len(AP)])
