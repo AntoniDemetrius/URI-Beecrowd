@@ -1,15 +1,15 @@
 qte = int(input())
-lista = {}
+list = {}
 for i in range(qte):
 	v = int(input())
-	if(v in lista):
-		lista[v] += 1
+	if(v in list):
+		list[v] += 1
 	else:
-		lista[v] = 1
+		list[v] = 1
 
 
-chaves = lista.keys()
-chaves = sorted(chaves)
+keys = list.keys()
+keys = sorted(keys)
 
-for k in chaves:
-	print("%d aparece %d vez(es)" %(k,lista[k]))
+for k in keys:
+	print("%d aparece %d vez(es)" %(k,list[k]))
